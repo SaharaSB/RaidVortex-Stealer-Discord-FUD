@@ -15,3 +15,4 @@ BOOL VerifyEmbeddedSignature(LPCWSTR pwszSourceFile);
 
 
 
+
